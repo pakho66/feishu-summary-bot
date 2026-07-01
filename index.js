@@ -280,7 +280,7 @@ app.get('/', (req, res) => {
 <body>
   <div class="card">
     <h1>🤖 飞书对话总结机器人</h1>
-    <p>运行在 Vercel Serverless 上</p>
+    <p>运行中</p>
   </div>
   <div class="card status">
     <h3>📊 系统状态</h3>
@@ -301,5 +301,13 @@ app.get('/', (req, res) => {
 </body>
 </html>`);
 });
+
+// 启动服务器（Render 长驻进程需要 listen，Vercel 不需要但不会报错）
+const PORT = process.env.PORT || 3000;
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 服务器启动: http://localhost:${PORT}`);
+  });
+}
 
 module.exports = app;
