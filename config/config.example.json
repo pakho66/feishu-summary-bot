@@ -1,0 +1,10 @@
+# 飞书应用配置
+# 将此文件保存为 config/config.json 并填写真实值
+
+{
+  "FEISHU_APP_ID": "cli_xxxxxxxxxxxxxxxxxx",
+  "FEISHU_APP_SECRET": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "VERIFICATION_TOKEN": "your-verification-token-123",
+  "OPENAI_API_KEY": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "USER_OPEN_ID": "ou_xxxxxxxxxxxxxxxxxx"
+}
