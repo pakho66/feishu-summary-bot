@@ -1,22 +1,16 @@
 {
   "name": "feishu-summary-bot",
-  "version": "1.0.0",
-  "description": "飞书对话总结机器人 - 自动生成每日总结",
+  "version": "3.0.0",
+  "description": "飞书对话总结机器人 - Cloudflare Workers 版（冷启动 <5ms，零依赖）",
+  "type": "module",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "node scripts/test-feishu.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "body-parser": "^1.20.2",
-    "axios": "^1.6.0",
-    "openai": "^4.0.0",
-    "dotenv": "^16.3.1"
-  },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "wrangler": "^4.106.0"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "login": "wrangler login"
   },
   "engines": {
     "node": ">=18.0.0"
