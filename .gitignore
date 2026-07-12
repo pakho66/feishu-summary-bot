@@ -39,5 +39,5 @@ temp/
 coverage/
 .nyc_output/
 
-# Vercel
-.vercel/
+# Cloudflare
+.wrangler/
